@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.RestController;
 @CrossOrigin("*")
 public class PostagemController {
 
-	@Autowired
+	@Autowired //injeção de dependência
 	private PostagemRepository repository;
 	
 	@GetMapping
@@ -52,7 +52,7 @@ public class PostagemController {
 		return ResponseEntity.status(HttpStatus.OK).body(repository.save(postagem));
 	}
 	
-	@DeleteMapping("/{id}") //Annotation para mapear o protocolo put
+	@DeleteMapping("/{id}") //Annotation para mapear o protocolo delete
 	public void delete(@PathVariable long id) {
 		repository.deleteById(id);
 	}
