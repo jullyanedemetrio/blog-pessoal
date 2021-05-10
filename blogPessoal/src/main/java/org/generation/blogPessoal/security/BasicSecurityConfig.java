@@ -14,6 +14,8 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 @EnableWebSecurity //annotation para habilitar a configuração da web security
 public class BasicSecurityConfig extends WebSecurityConfigurerAdapter {
 
+	//Classe de configuração de segurança do projeto
+	
 	@Autowired
 	private UserDetailsService userDetailsService;
 	
