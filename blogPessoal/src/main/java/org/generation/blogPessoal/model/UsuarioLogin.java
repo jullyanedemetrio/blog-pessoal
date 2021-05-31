@@ -4,6 +4,8 @@ public class UsuarioLogin {
 
 	//Essa classe apenas entrega uma resposta quando o usuário realizar login, não tem interação com o DB
 	
+	private long id;
+	
 	private String nome;
 	
 	private String usuario;
@@ -11,8 +13,21 @@ public class UsuarioLogin {
 	private String senha;
 	
 	private String token;
+	
+	private String foto;
+	
+	private String tipo;
 
 	//Encapsulamento
+	
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
 	public String getNome() {
 		return nome;
 	}
@@ -43,5 +58,21 @@ public class UsuarioLogin {
 
 	public void setToken(String token) {
 		this.token = token;
+	}
+
+	public String getFoto() {
+		return foto;
+	}
+
+	public void setFoto(String foto) {
+		this.foto = foto;
+	}
+
+	public String getTipo() {
+		return tipo;
+	}
+
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
 	}
 }

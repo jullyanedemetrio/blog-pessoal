@@ -42,7 +42,7 @@ public class UserDetailsImpl implements UserDetails {
 	}
 
 	@Override
-	public boolean isAccountNonExpired() { //É boa prática retornar true
+	public boolean isAccountNonExpired() { //É boa prática retornar true - Informa se a senha expirou
 		// TODO Auto-generated method stub
 		return true;
 	}
