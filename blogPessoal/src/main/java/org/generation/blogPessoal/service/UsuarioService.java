@@ -42,7 +42,10 @@ public class UsuarioService {
 				String authHeader = "Basic " + new String(encodedAuth); //Concatena basic e o encodedAuth
 				
 				user.get().setToken(authHeader); //Insere o token no atributo
+				user.get().setId(usuario.get().getId());
 				user.get().setNome(usuario.get().getNome()); //Pega o nome do Usuario
+				user.get().setFoto(usuario.get().getFoto());
+				user.get().setTipo(usuario.get().getTipo());
 				
 				return user;
 			}
